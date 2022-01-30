@@ -1,0 +1,30 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+type Mutation {
+  createPost(post: PostInput): [Post!]!
+}
+
+type Post {
+  authorId: ID
+  body: String
+  createdAt: String
+  description: String
+  id: ID
+  title: String
+}
+
+type Query {
+  posts: [Post!]!
+}
+
+input PostInput {
+  authorId: ID!
+  body: String!
+  description: String!
+  title: String!
+}

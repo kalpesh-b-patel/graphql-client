@@ -1,0 +1,15 @@
+{
+  "name": "Blog Schema",
+  "schemaPath": "blog.graphql",
+  "extensions": {
+    "endpoints": {
+      "Blog Server": {
+        "url": "http://localhost:4000/graphql/",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": true
+      }
+    }
+  }
+}
