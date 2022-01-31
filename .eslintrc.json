@@ -10,6 +10,7 @@
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
-    "import/extensions": ["error", "never"]
+    "import/extensions": ["error", "never"],
+    "max-len": ["error", { "code": 120 }]
   }
 }
