@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import AuthProvider from './contexts/AuthContext';
 
@@ -14,7 +15,9 @@ ReactDOM.render(
   <React.StrictMode>
     <ApolloProvider client={client}>
       <AuthProvider>
-        <App />
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
       </AuthProvider>
     </ApolloProvider>
   </React.StrictMode>,
