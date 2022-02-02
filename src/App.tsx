@@ -3,9 +3,8 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div>
+    <div className="bg-gray-100 h-full">
       <Navbar/>
-      <button className="btn">Submit</button>
     </div>
   );
 }
